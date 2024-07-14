@@ -120,3 +120,38 @@
 	animation-direction: alternate;
 	animation-timing-function: linear;
 }
+.fadeInClass1 {
+	animation-name: fadeIn;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+}
+.fadeInClass2 {
+	animation-name: fadeIn;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+}
+.fadeInClass3 {
+	animation-name: fadeIn;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+}
+.fadeInClass4 {
+	animation-name: fadeIn;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+}
+.fadeInClass5 {
+	animation-name: fadeIn;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+}
