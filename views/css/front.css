@@ -54,10 +54,19 @@
     border-right: 1px solid #515151;
 }
 
+#registration_slideshow {
+    text-align: center;
+    overflow: hidden;
+    /*height: 600px;
+    width: 370px;
+    margin: 0 auto;
+    float: left;*/
+}
+
 #registration_content {
-    float: left;
+    /*float: left;
     display:block;
-    width: auto;
+    width: auto;*/
     background-color:burlywood;
 }
   
