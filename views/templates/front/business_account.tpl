@@ -34,9 +34,9 @@
 			<div id="b2b_registation_required" class="alert alert-danger error" style="display:none;"></div>
 			<section>
 				<div class="row">
-					<div id="registration_slideshow" class="registration_slideshow col-lg-3 col-12">
+					<div id="registration_slideshow" class="registration_slideshow col-lg-4 col-12">
 						<div class="slide-wrapper">
-							<div class="slide"><img src"" /></div>
+							<div class="slide"><img src"images/registration_slide_01.jpg" /></div>
 							<div class="slide"><h1 class="slide-number">2</h1></div>
 							<div class="slide"><h1 class="slide-number">3</h1></div>
 							<div class="slide"><h1 class="slide-number">4</h1></div>
@@ -44,7 +44,7 @@
 						</div>
 					</div>
 					
-					<div id="registration_content" class="registration_content pl-lg-5 col-lg-9 col-12">
+					<div id="registration_content" class="registration_content pl-lg-5 col-lg-8 col-12">
 						<h3>{if !empty($personal_heading)}{$personal_heading|escape:'htmlall':'UTF-8'}{/if}</h3><hr>
 						{if $enable_prefix}
 							<div class="form-group col-md-2">
