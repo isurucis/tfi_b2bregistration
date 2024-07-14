@@ -81,7 +81,7 @@
 	height: 600px;
 	position: relative;
 	overflow: hidden;
-	box-shadow: rgba(0,0,0,0.2) 10px 10px 10px;
+	/*box-shadow: rgba(0,0,0,0.2) 10px 10px 10px;*/
 }
 
 .imagesContainer img {
