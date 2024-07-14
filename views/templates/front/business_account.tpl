@@ -45,7 +45,7 @@
 					</div>
 					
 					<div id="registration_content" class="registration_content pl-lg-15 col-lg-8 col-12">
-						<h3 class="registration_block_title">{if !empty($personal_heading)}{$personal_heading|escape:'htmlall':'UTF-8'}{/if}</h3><hr>
+						<h3 class="registration_block_title">{if !empty($personal_heading)}{$personal_heading|escape:'htmlall':'UTF-8'}{/if}</h3>
 						{if $enable_prefix}
 							<div class="form-group col-md-2">
 									<label for="name-prefix">{l s='Name Prefix' mod='b2bregistration'}</label>
@@ -108,9 +108,9 @@
 
 
 						{if $enable_address}
-							<div class="col-md-12 row">
-									<h3 class="registration_block_title">{if !empty($address_heading)}{$address_heading|escape:'htmlall':'UTF-8'}{/if}</h3><hr>
-								</div>
+						
+							<h3 class="registration_block_title">{if !empty($address_heading)}{$address_heading|escape:'htmlall':'UTF-8'}{/if}</h3>
+				
 							<div class="form-group col-md-3">
 									<label for="address-alias">{l s='Address Alias' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
 									<input type="text" name="address_alias" id="address-alias" placeholder="{l s='e.g Home' mod='b2bregistration'}" class="form-control" value="{if !empty($smarty.post.address_alias)}{$smarty.post.address_alias|escape:'htmlall':'UTF-8'}{/if}">
@@ -135,9 +135,9 @@
 
 
 
-							<div class="col-md-12 row">
-								<h3 class="registration_block_title">{if !empty($company_heading)}{$company_heading|escape:'htmlall':'UTF-8'}{/if}</h3><hr>
-							</div>
+						
+							<h3 class="registration_block_title">{if !empty($company_heading)}{$company_heading|escape:'htmlall':'UTF-8'}{/if}</h3>
+						
 
 							<div class="form-group col-md-4">
 								<label for="company-name">{l s='Company Name' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
@@ -170,9 +170,9 @@
 
 
 
-						<div class="col-md-12 row">
-								<h3 class="registration_block_title">{if !empty($signin_heading)}{$signin_heading|escape:'htmlall':'UTF-8'}{/if}</h3><hr>
-							</div>
+						
+								<h3 class="registration_block_title">{if !empty($signin_heading)}{$signin_heading|escape:'htmlall':'UTF-8'}{/if}</h3>
+					
 
 							<div class="form-group col-md-4">
 								<label for="email">{l s='Email' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
@@ -204,13 +204,14 @@
 							</div>
 						<br /><br /><br />
 
-						
+
 						
 						{if $custom_fields AND $enable_custom}
 											<div class="clearfix"></div>
-											<div class="col-md-12">
+											
 													<h3 class="registration_block_title">{if !empty($custom_heading)}{$custom_heading|escape:'htmlall':'UTF-8'}{/if}</h3>
-											</div><div class="clearfix"></div>
+											
+											<div class="clearfix"></div>
 											{$hook_create_account_form nofilter}
 									{/if}
 							
@@ -279,7 +280,7 @@
 							<div class="form-group col-md-6">
 											<div class='g-recaptcha' id='Gcaptcha'></div>
 							</div>
-							<div class="col-md-12"><hr></div>
+							<div class="col-md-12"><br /><br /></div>
 							<footer class="form-footer clearfix">
 								<button title="{l s='Check terms to enable button' mod='b2bregistration' }" class="btn btn-primary form-control-submit float-xs-right" type="submit" id="b2b_add_data" name="b2b_add_data" {if isset($site_key) AND $enable_captcha}style='display:none;'{/if}>
 										{l s='Save' mod='b2bregistration'}
