@@ -36,7 +36,7 @@
 				<div class="row">
 					<div id="registration_slideshow" class="registration_slideshow col-lg-4 col-12">
 						<div class="slide-wrapper">
-							<div class="slide"><img src"images/registration_slide_01.jpg" /></div>
+							<div class="slide"><img src"/modules/ps_imageslider/images/20c88b369089f216c8430ab7325d2a5b3414ca2a_registration_slide_01.jpg" /></div>
 							<div class="slide"><h1 class="slide-number">2</h1></div>
 							<div class="slide"><h1 class="slide-number">3</h1></div>
 							<div class="slide"><h1 class="slide-number">4</h1></div>
