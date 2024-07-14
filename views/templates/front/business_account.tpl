@@ -44,7 +44,7 @@
 						</div>
 					</div>
 					
-					<div id="registration_content" class="registration_content pl-lg-5 col-lg-8 col-12">
+					<div id="registration_content" class="registration_content pl-lg-15 col-lg-8 col-12">
 						<h3 class="registration_block_title">{if !empty($personal_heading)}{$personal_heading|escape:'htmlall':'UTF-8'}{/if}</h3><hr>
 						{if $enable_prefix}
 							<div class="form-group col-md-2">
@@ -60,22 +60,22 @@
 										</select>
 								</div>	
 						{/if}
-							<div class="form-group col-md-3">
+							<div class="form-group col-md-3 col-lg-12 col-12">
 								<label for="first-name">{l s='First Name' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
 								<input type="text" name="first_name" id="first-name" class="form-control" value="{if !empty($smarty.post.first_name)}{$smarty.post.first_name|escape:'htmlall':'UTF-8'}{/if}">
 							</div>
 							{if $middle_name}
-							<div class="form-group col-md-3">
+							<div class="form-group col-md-3 col-lg-12 col-12">
 									<label for="middle-name">{l s='Middle Name' mod='b2bregistration'}</label>
 									<input type="text" name="middle_name" id="middle-name" class="form-control" value="{if !empty($smarty.post.middle_name)}{$smarty.post.middle_name|escape:'htmlall':'UTF-8'}{/if}">
 							</div>
 						{/if}
-							<div class="form-group col-md-3">
+							<div class="form-group col-md-3 col-lg-12 col-12">
 								<label for="last-name">{l s='Last Name' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
 								<input type="text"  name="last_name" id="last-name" class="form-control" value="{if !empty($smarty.post.last_name)}{$smarty.post.last_name|escape:'htmlall':'UTF-8'}{/if}">
 							</div>
 							{if $enable_suffix}
-							<div class="form-group col-md-2">
+							<div class="form-group col-md-2 col-lg-12 col-12">
 									<label for="name-suffix">{l s='Name Suffix' mod='b2bregistration'}</label>
 									<select class="form-control" id="name-suffix" name="name_suffix">
 											{if !empty($name_suffix)}
@@ -87,20 +87,25 @@
 								</div>	
 						{/if}
 
-						{if $enable_birthdate}
-							<div class="form-group col-md-3">
-									<label for="birthdate">{l s='Birth Date' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
-									<input type="text" name="birthday" id="birthdate" class="form-control" placeholder="{l s='YYYY-MM-DD' mod='b2bregistration'}" value="{if !empty($smarty.post.birthday)}{$smarty.post.birthday|escape:'htmlall':'UTF-8'}{/if}">
-									<span class="form-control-comment">{l s='(E.g.: 1970-12-31)' mod='b2bregistration'}</span>
-								</div>
+						<div class="row">
+							{if $enable_birthdate}
+								<div class="form-group col-md-3 col-lg-4 col-12">
+										<label for="birthdate">{l s='Birth Date' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
+										<input type="text" name="birthday" id="birthdate" class="form-control" placeholder="{l s='YYYY-MM-DD' mod='b2bregistration'}" value="{if !empty($smarty.post.birthday)}{$smarty.post.birthday|escape:'htmlall':'UTF-8'}{/if}">
+										<span class="form-control-comment">{l s='(E.g.: 1970-12-31)' mod='b2bregistration'}</span>
+									</div>
 							{/if}
 
 							{if $enable_website}
-							<div class="form-group col-md-3">
-									<label for="gender">{l s='Website' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
-									<input type="text" name="website" id="company-website" class="form-control" value="{if !empty($smarty.post.website)}{$smarty.post.website|escape:'htmlall':'UTF-8'}{/if}" placeholder="{l s='https://www.google.com' mod='b2bregistration'}">
-								</div>	
-						{/if}
+								<div class="form-group col-md-3 col-lg-8 col-12">
+										<label for="gender">{l s='Website' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
+										<input type="text" name="website" id="company-website" class="form-control" value="{if !empty($smarty.post.website)}{$smarty.post.website|escape:'htmlall':'UTF-8'}{/if}" placeholder="{l s='https://www.google.com' mod='b2bregistration'}">
+									</div>	
+							{/if}
+						</div>
+						<br /><br /><br />
+
+
 
 						{if $enable_address}
 							<div class="col-md-12 row">
@@ -126,6 +131,9 @@
 									<input type="text" name="vat_number" id="vat_num" class="form-control" value="{if !empty($smarty.post.vat_num)}{$smarty.post.vat_number|escape:'htmlall':'UTF-8'}{/if}">
 								</div>
 						{/if}
+						<br /><br /><br />
+
+
 
 							<div class="col-md-12 row">
 								<h3 class="registration_block_title">{if !empty($company_heading)}{$company_heading|escape:'htmlall':'UTF-8'}{/if}</h3><hr>
@@ -158,6 +166,10 @@
 								</div>
 							{/if}
 						{/if}
+						<br /><br /><br />
+
+
+
 						<div class="col-md-12 row">
 								<h3 class="registration_block_title">{if !empty($signin_heading)}{$signin_heading|escape:'htmlall':'UTF-8'}{/if}</h3><hr>
 							</div>
@@ -190,7 +202,9 @@
 											</span>
 									</div>    
 							</div>
+						<br /><br /><br />
 
+						
 						
 						{if $custom_fields AND $enable_custom}
 											<div class="clearfix"></div>

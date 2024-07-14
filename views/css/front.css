@@ -80,6 +80,9 @@
     line-height: 1.2;
     margin-bottom: .9rem;
     font-family: roboto;
+    background-color: #edeef0;
+    padding: 10px 10px 10px 15px;
+    border-radius: 8px;
 }
 
 
