@@ -37,10 +37,10 @@
 					<div id="registration_slideshow" class="registration_slideshow col-lg-4 col-12">
 						<div class="registration_slide-wrapper">
 							<div class="registration_slide"><img src="/modules/ps_imageslider/images/20c88b369089f216c8430ab7325d2a5b3414ca2a_registration_slide_01.jpg" /></div>
-							<div class="registration_slide"><h1 class="registration_slide-number">2</h1></div>
-							<div class="registration_slide"><h1 class="registration_slide-number">3</h1></div>
-							<div class="registration_slide"><h1 class="registration_slide-number">4</h1></div>
-							<div class="registration_slide"><h1 class="registration_slide-number">5</h1></div>
+							<div class="registration_slide"><img src="/modules/ps_imageslider/images/fa7ff5172fe8c370943617c654ea7d3c6e379ab8_registration_slide_02.jpg" /></div>
+							<div class="registration_slide"><img src="/modules/ps_imageslider/images/d9f945e3b6c1b23492907c3c42dac4ef6dd3b7c5_registration_slide_03.jpg" /></div>
+							<div class="registration_slide"><img src="/modules/ps_imageslider/images/d96b47e79e41c890cfe737372b31f4a88f366819_registration_slide_04.jpg" /></div>
+							<div class="registration_slide"><img src="/modules/ps_imageslider/images/44dd757213f8723c98926728b94e674a7b548f8f_registration_slide_05.jpg" /></div>
 						</div>
 					</div>
 					
