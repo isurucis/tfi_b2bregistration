@@ -45,7 +45,7 @@
 					</div>
 					
 					<div id="registration_content" class="registration_content pl-lg-5 col-lg-8 col-12">
-						<h3>{if !empty($personal_heading)}{$personal_heading|escape:'htmlall':'UTF-8'}{/if}</h3><hr>
+						<h3 class="registration_block_title">{if !empty($personal_heading)}{$personal_heading|escape:'htmlall':'UTF-8'}{/if}</h3><hr>
 						{if $enable_prefix}
 							<div class="form-group col-md-2">
 									<label for="name-prefix">{l s='Name Prefix' mod='b2bregistration'}</label>
@@ -104,7 +104,7 @@
 
 						{if $enable_address}
 							<div class="col-md-12 row">
-									<h3>{if !empty($address_heading)}{$address_heading|escape:'htmlall':'UTF-8'}{/if}</h3><hr>
+									<h3 class="registration_block_title">{if !empty($address_heading)}{$address_heading|escape:'htmlall':'UTF-8'}{/if}</h3><hr>
 								</div>
 							<div class="form-group col-md-3">
 									<label for="address-alias">{l s='Address Alias' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
@@ -128,7 +128,7 @@
 						{/if}
 
 							<div class="col-md-12 row">
-								<h3>{if !empty($company_heading)}{$company_heading|escape:'htmlall':'UTF-8'}{/if}</h3><hr>
+								<h3 class="registration_block_title">{if !empty($company_heading)}{$company_heading|escape:'htmlall':'UTF-8'}{/if}</h3><hr>
 							</div>
 
 							<div class="form-group col-md-4">
@@ -159,7 +159,7 @@
 							{/if}
 						{/if}
 						<div class="col-md-12 row">
-								<h3>{if !empty($signin_heading)}{$signin_heading|escape:'htmlall':'UTF-8'}{/if}</h3><hr>
+								<h3 class="registration_block_title">{if !empty($signin_heading)}{$signin_heading|escape:'htmlall':'UTF-8'}{/if}</h3><hr>
 							</div>
 
 							<div class="form-group col-md-4">
@@ -195,7 +195,7 @@
 						{if $custom_fields AND $enable_custom}
 											<div class="clearfix"></div>
 											<div class="col-md-12">
-													<h3>{if !empty($custom_heading)}{$custom_heading|escape:'htmlall':'UTF-8'}{/if}</h3>
+													<h3 class="registration_block_title">{if !empty($custom_heading)}{$custom_heading|escape:'htmlall':'UTF-8'}{/if}</h3>
 											</div><div class="clearfix"></div>
 											{$hook_create_account_form nofilter}
 									{/if}
