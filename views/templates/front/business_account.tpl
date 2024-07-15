@@ -87,7 +87,7 @@
 								</div>	
 						{/if}
 
-						<div class="row">
+						<div class="form-group col-md-3 col-lg-12 col-12 row">
 							{if $enable_birthdate}
 								<div class="form-group col-md-3 col-lg-4 col-12">
 										<label for="birthdate">{l s='Birth Date' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
@@ -110,26 +110,31 @@
 						{if $enable_address}
 						
 							<h3 class="registration_block_title">{if !empty($address_heading)}{$address_heading|escape:'htmlall':'UTF-8'}{/if}</h3>
-				
-							<div class="form-group col-md-3">
-									<label for="address-alias">{l s='Address Alias' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
-									<input type="text" name="address_alias" id="address-alias" placeholder="{l s='e.g Home' mod='b2bregistration'}" class="form-control" value="{if !empty($smarty.post.address_alias)}{$smarty.post.address_alias|escape:'htmlall':'UTF-8'}{/if}">
+
+							<div class="form-group col-md-4 col-lg-12 col-12 row">
+								<div class="form-group col-md-4">
+										<label for="address-alias">{l s='Address Alias' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
+										<input type="text" name="address_alias" id="address-alias" placeholder="{l s='e.g Home' mod='b2bregistration'}" class="form-control" value="{if !empty($smarty.post.address_alias)}{$smarty.post.address_alias|escape:'htmlall':'UTF-8'}{/if}">
 								</div>
-							
-							<div class="form-group col-md-3">
-									<label for="city">{l s='City' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
-									<input type="text" name="city" id="city" class="form-control" value="{if !empty($smarty.post.city)}{$smarty.post.city|escape:'htmlall':'UTF-8'}{/if}">
+								
+								<div class="form-group col-md-4">
+										<label for="city">{l s='City' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
+										<input type="text" name="city" id="city" class="form-control" value="{if !empty($smarty.post.city)}{$smarty.post.city|escape:'htmlall':'UTF-8'}{/if}">
 								</div>
 
-							<div class="form-group col-md-3">
+								<div class="form-group col-md-4">
+										<label for="vat_num">{l s='Vat Number' mod='b2bregistration'}</label>
+										<input type="text" name="vat_number" id="vat_num" class="form-control" value="{if !empty($smarty.post.vat_num)}{$smarty.post.vat_number|escape:'htmlall':'UTF-8'}{/if}">
+								</div>
+							</div>
+
+
+							<div class="form-group col-md-4 col-lg-12 col-12 row">
 									<label for="address">{l s='Address' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
 									<input type="text" name="address" id="address" class="form-control" value="{if !empty($smarty.post.address)}{$smarty.post.address|escape:'htmlall':'UTF-8'}{/if}">
-								</div>
+							</div>
 
-							<div class="form-group col-md-3">
-									<label for="vat_num">{l s='Vat Number' mod='b2bregistration'}</label>
-									<input type="text" name="vat_number" id="vat_num" class="form-control" value="{if !empty($smarty.post.vat_num)}{$smarty.post.vat_number|escape:'htmlall':'UTF-8'}{/if}">
-								</div>
+							
 						{/if}
 						<br /><br /><br />
 
@@ -139,7 +144,7 @@
 							<h3 class="registration_block_title">{if !empty($company_heading)}{$company_heading|escape:'htmlall':'UTF-8'}{/if}</h3>
 						
 
-							<div class="form-group col-md-4">
+							<div class="form-group col-md-4 col-lg-12 col-12 row">
 								<label for="company-name">{l s='Company Name' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
 								<input type="text" name="company_name" id="company-name" class="form-control" value="{if !empty($smarty.post.company_name)}{$smarty.post.company_name|escape:'htmlall':'UTF-8'}{/if}" >
 							</div>
@@ -171,36 +176,38 @@
 
 
 						
-								<h3 class="registration_block_title">{if !empty($signin_heading)}{$signin_heading|escape:'htmlall':'UTF-8'}{/if}</h3>
+						<h3 class="registration_block_title">{if !empty($signin_heading)}{$signin_heading|escape:'htmlall':'UTF-8'}{/if}</h3>
 					
 
-							<div class="form-group col-md-4">
+							<div class="form-group col-md-4 col-lg-12 col-12 row">
 								<label for="email">{l s='Email' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
 								<input type="email" name="email" id="email" class="form-control" value="{if !empty($smarty.post.email)}{$smarty.post.email|escape:'htmlall':'UTF-8'}{/if}">
 							</div>
 
-							<div class="form-group col-md-4">
-								<label for="password">{l s='Password' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
-								<div class="input-group js-parent-focus">
-									<input type="password" name="password" id="business-password" class="form-control js-child-focus js-visible-password" value="{if !empty($smarty.post.password)}{$smarty.post.password|escape:'htmlall':'UTF-8'}{/if}">
-									<span class="input-group-btn">
-												<button class="btn" type="button" data-action="show-password" data-text-show="Show" data-text-hide="Hide">
-													{l s='Show' mod='b2bregistration'}
-												</button>
-											</span>
-									</div>    
-							</div>
+							<div class="form-group col-md-4 col-lg-12 col-12 row">
+								<div class="form-group col-md-6">
+									<label for="password">{l s='Password' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
+									<div class="input-group js-parent-focus">
+										<input type="password" name="password" id="business-password" class="form-control js-child-focus js-visible-password" value="{if !empty($smarty.post.password)}{$smarty.post.password|escape:'htmlall':'UTF-8'}{/if}">
+										<span class="input-group-btn">
+													<button class="btn" type="button" data-action="show-password" data-text-show="Show" data-text-hide="Hide">
+														{l s='Show' mod='b2bregistration'}
+													</button>
+												</span>
+										</div>    
+								</div>
 
-							<div class="form-group col-md-4">
-								<label for="confirm-password">{l s='Confirm Password' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
-								<div class="input-group js-parent-focus">
-									<input type="password" name="confirm_password" id="confirm-password" class="form-control js-child-focus js-visible-password" value="{if !empty($smarty.post.confirm_password)}{$smarty.post.confirm_password|escape:'htmlall':'UTF-8'}{/if}">
-									<span class="input-group-btn">
-												<button class="btn" type="button" data-action="show-password" data-text-show="Show" data-text-hide="Hide">
-													{l s='Show' mod='b2bregistration'}
-												</button>
-											</span>
-									</div>    
+								<div class="form-group col-md-6">
+									<label for="confirm-password">{l s='Confirm Password' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
+									<div class="input-group js-parent-focus">
+										<input type="password" name="confirm_password" id="confirm-password" class="form-control js-child-focus js-visible-password" value="{if !empty($smarty.post.confirm_password)}{$smarty.post.confirm_password|escape:'htmlall':'UTF-8'}{/if}">
+										<span class="input-group-btn">
+													<button class="btn" type="button" data-action="show-password" data-text-show="Show" data-text-hide="Hide">
+														{l s='Show' mod='b2bregistration'}
+													</button>
+												</span>
+										</div>    
+								</div>
 							</div>
 						<br /><br /><br />
 
