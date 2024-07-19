@@ -46,20 +46,20 @@
 					
 					<div id="registration_content" class="registration_content pl-lg-15 col-lg-8 col-12">
 						<h3 class="registration_block_title">{if !empty($personal_heading)}{$personal_heading|escape:'htmlall':'UTF-8'}{/if}</h3>
-						{if $enable_prefix}
-							<div class="form-group col-md-2">
+							{if $enable_prefix}
+								<div class="form-group col-md-2">
 									<label for="name-prefix">{l s='Name Prefix' mod='b2bregistration'}</label>
 									<select class="form-control" id="name-prefix" name="name_prefix">
-											{if !empty($name_prefix)}
-												{foreach from=$genders item=gender}
-													{if in_array($gender.id_gender, $name_prefix)}
-														<option value="{$gender.id_gender|escape:'htmlall':'UTF-8'}">{$gender.name|escape:'htmlall':'UTF-8'}</option>
-													{/if}	
-												{/foreach}	
-											{/if}
-										</select>
+										{if !empty($name_prefix)}
+											{foreach from=$genders item=gender}
+												{if in_array($gender.id_gender, $name_prefix)}
+													<option value="{$gender.id_gender|escape:'htmlall':'UTF-8'}">{$gender.name|escape:'htmlall':'UTF-8'}</option>
+												{/if}	
+											{/foreach}	
+										{/if}
+									</select>
 								</div>	
-						{/if}
+							{/if}
 							<div class="form-group col-md-3 col-lg-12 col-12">
 								<label for="first-name">{l s='First Name' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
 								<input type="text" name="first_name" id="first-name" class="form-control" value="{if !empty($smarty.post.first_name)}{$smarty.post.first_name|escape:'htmlall':'UTF-8'}{/if}">
@@ -69,23 +69,23 @@
 									<label for="middle-name">{l s='Middle Name' mod='b2bregistration'}</label>
 									<input type="text" name="middle_name" id="middle-name" class="form-control" value="{if !empty($smarty.post.middle_name)}{$smarty.post.middle_name|escape:'htmlall':'UTF-8'}{/if}">
 							</div>
-						{/if}
+							{/if}
 							<div class="form-group col-md-3 col-lg-12 col-12">
 								<label for="last-name">{l s='Last Name' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
 								<input type="text"  name="last_name" id="last-name" class="form-control" value="{if !empty($smarty.post.last_name)}{$smarty.post.last_name|escape:'htmlall':'UTF-8'}{/if}">
 							</div>
 							{if $enable_suffix}
-							<div class="form-group col-md-2 col-lg-12 col-12">
+								<div class="form-group col-md-2 col-lg-12 col-12">
 									<label for="name-suffix">{l s='Name Suffix' mod='b2bregistration'}</label>
 									<select class="form-control" id="name-suffix" name="name_suffix">
-											{if !empty($name_suffix)}
-												{foreach from=$name_suffix item=name_suffixes}
-													<option value="{$name_suffixes|escape:'htmlall':'UTF-8'}">{$name_suffixes|escape:'htmlall':'UTF-8'}</option>
-												{/foreach}
-											{/if}
-										</select>
+										{if !empty($name_suffix)}
+											{foreach from=$name_suffix item=name_suffixes}
+												<option value="{$name_suffixes|escape:'htmlall':'UTF-8'}">{$name_suffixes|escape:'htmlall':'UTF-8'}</option>
+											{/foreach}
+										{/if}
+									</select>
 								</div>	
-						{/if}
+							{/if}
 
 						<div class="form-group col-md-3 col-lg-12 col-12 row">
 							{if $enable_birthdate}
@@ -128,13 +128,11 @@
 								</div>
 							</div>
 
-
-							<div class="form-group col-md-4 col-lg-12 col-12 row">
+							<div class="form-group col-md-3 col-lg-12 col-12">
 									<label for="address">{l s='Address' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
 									<input type="text" name="address" id="address" class="form-control" value="{if !empty($smarty.post.address)}{$smarty.post.address|escape:'htmlall':'UTF-8'}{/if}">
 							</div>
 
-							
 						{/if}
 						<br /><br /><br />
 
@@ -185,29 +183,35 @@
 							</div>
 
 							<div class="form-group col-md-4 col-lg-12 col-12 row">
+								
 								<div class="form-group col-md-6">
 									<label for="password">{l s='Password' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
+									
 									<div class="input-group js-parent-focus">
 										<input type="password" name="password" id="business-password" class="form-control js-child-focus js-visible-password" value="{if !empty($smarty.post.password)}{$smarty.post.password|escape:'htmlall':'UTF-8'}{/if}">
-										<span class="input-group-btn">
-													<button class="btn" type="button" data-action="show-password" data-text-show="Show" data-text-hide="Hide">
-														{l s='Show' mod='b2bregistration'}
-													</button>
-												</span>
-										</div>    
+										<div class="input-group-append">
+											<button class="btn btn-primary" type="button" data-action="show-password" data-text-show="Show" data-text-hide="Hide">
+												{l s='Show' mod='b2bregistration'}
+											</button>
+										</div>
+									</div>
+
 								</div>
 
 								<div class="form-group col-md-6">
 									<label for="confirm-password">{l s='Confirm Password' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
+									
 									<div class="input-group js-parent-focus">
 										<input type="password" name="confirm_password" id="confirm-password" class="form-control js-child-focus js-visible-password" value="{if !empty($smarty.post.confirm_password)}{$smarty.post.confirm_password|escape:'htmlall':'UTF-8'}{/if}">
-										<span class="input-group-btn">
-													<button class="btn" type="button" data-action="show-password" data-text-show="Show" data-text-hide="Hide">
-														{l s='Show' mod='b2bregistration'}
-													</button>
-												</span>
-										</div>    
+										<div class="input-group-append">
+											<button class="btn btn-primary" type="button" data-action="show-password" data-text-show="Show" data-text-hide="Hide">
+												{l s='Show' mod='b2bregistration'}
+											</button>
+										</div>
+									</div>  
+									  
 								</div>
+								
 							</div>
 						<br /><br /><br />
 
