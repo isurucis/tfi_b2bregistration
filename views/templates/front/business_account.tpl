@@ -230,7 +230,7 @@
 									<span class="custom-checkbox">
 										<label class="label-control col-md-12">
 											<input name="partner_option" type="checkbox" id="partner-option" value="0">
-											<span><i class="material-icons rtl-no-flip checkbox-checked"></i></span>
+											<!-- span><i class="material-icons rtl-no-flip checkbox-checked"></i></span -->
 											{l s='Receive offers from our partners' mod='b2bregistration'}
 										</label>
 									</span>
@@ -240,7 +240,7 @@
 									<span class="custom-checkbox">
 										<label class="label-control col-md-12">
 											<input name="newsletter" value="0" type="checkbox" id="newsletter">
-											<span><i class="material-icons rtl-no-flip checkbox-checked"></i></span>
+											<!-- span><i class="material-icons rtl-no-flip checkbox-checked"></i></span -->
 											{l s='Sign up for our newsletter' mod='b2bregistration'}
 										</label>
 									</span>
@@ -250,7 +250,7 @@
 									<span class="custom-checkbox">
 										<label class="label-control col-md-12">
 												<input name="terms" type="checkbox" id="terms" value="1" >
-												<span><i class="material-icons rtl-no-flip checkbox-checked"></i></span>
+												<!-- span><i class="material-icons rtl-no-flip checkbox-checked"></i></span -->
 												{l s='I agree to the terms and conditions and the privacy policy' mod='b2bregistration'}
 								{if isset($cms) AND $cms}
 									<a class="read-b2b-conditions" href="#b2b-cond" class="thickbox" title="{l s='Conditions of the B2B registration program' mod='b2bregistration'}" rel="nofollow">{l s='Read conditions.' mod='b2bregistration'}</a>
@@ -268,7 +268,7 @@
 									<span class="custom-checkbox">
 										<label class="label-control col-md-12">
 												<input name="rules" type="checkbox" checked="checked" id="rules" value="1" >
-												<span><i class="material-icons rtl-no-flip checkbox-checked"></i></span>
+												<!-- span><i class="material-icons rtl-no-flip checkbox-checked"></i></span -->
 								{if isset($cms_rule) AND $cms_rule}
 									<a class="read-b2b-conditions" href="#b2b-cond2" class="thickbox" title="{l s='Rules of the B2B registration program' mod='b2bregistration'}" rel="nofollow">{l s='Read Rules.' mod='b2bregistration'}</a>
 									<div style="display:none;">
