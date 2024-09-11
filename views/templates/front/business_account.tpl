@@ -194,6 +194,7 @@
 									            {if isset($configuration.password_policy.maximum_length)}data-maxlength="{$configuration.password_policy.maximum_length}"{/if}
 									            {if isset($configuration.password_policy.minimum_score)}data-minscore="{$configuration.password_policy.minimum_score}"{/if}
 									            pattern=".{literal}{{/literal}{$configuration.password_policy.minimum_length},{literal}}{/literal}"
+										    required
 										>
 										<div class="input-group-append">
 											<button class="btn btn-primary" type="button" data-action="show-password" data-text-show="Show" data-text-hide="Hide">
@@ -213,6 +214,7 @@
 									            {if isset($configuration.password_policy.maximum_length)}data-maxlength="{$configuration.password_policy.maximum_length}"{/if}
 									            {if isset($configuration.password_policy.minimum_score)}data-minscore="{$configuration.password_policy.minimum_score}"{/if}
 									            pattern=".{literal}{{/literal}{$configuration.password_policy.minimum_length},{literal}}{/literal}"
+										    required
 										>
 										<div class="input-group-append">
 											<button class="btn btn-primary" type="button" data-action="show-password" data-text-show="Show" data-text-hide="Hide">
