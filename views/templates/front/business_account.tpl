@@ -236,7 +236,7 @@
 													<h3 class="registration_block_title">{if !empty($custom_heading)}{$custom_heading|escape:'htmlall':'UTF-8'}{/if}</h3>
 											
 											<div class="clearfix"></div>
-											
+											{$hook_create_account_form nofilter}
 									{/if}
 							
 						<div class="form-group col-md-4" >
