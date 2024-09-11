@@ -387,7 +387,7 @@ class AdminB2BCustomFieldsController extends ModuleAdminController
             'checkbox' => $this->l('Checkbox(s)'),
             'radio' => $this->l('Radio Button(s)'),
             //'image' => $this->l('Image'),
-            //'attachment' => $this->l('Attachment'),
+            'attachment' => $this->l('Attachment'),
             'message' => $this->l('Message (Display Only)'),
         ];
     }
