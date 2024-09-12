@@ -32,6 +32,7 @@
 		<form id="customer-form" method="post" action="{$url_link|escape:'htmlall':'UTF-8'}">
 			<input type="hidden" name="id_profile" value="{$id_profile|intval}">
 			<div id="b2b_registation_required" class="alert alert-danger error" style="display:none;"></div>
+			
 			<section>
 				<div class="row">
 					<div id="registration_slideshow" class="registration_slideshow col-lg-4 col-12">
@@ -45,6 +46,7 @@
 					</div>
 					
 					<div id="registration_content" class="registration_content pl-lg-15 col-lg-8 col-12">
+						
 						<h3 class="registration_block_title">{if !empty($personal_heading)}{$personal_heading|escape:'htmlall':'UTF-8'}{/if}</h3>
 							{if $enable_prefix}
 								<div class="form-group col-md-2">
@@ -65,10 +67,10 @@
 								<input type="text" name="first_name" id="first-name" class="form-control" value="{if !empty($smarty.post.first_name)}{$smarty.post.first_name|escape:'htmlall':'UTF-8'}{/if}">
 							</div>
 							{if $middle_name}
-							<div class="form-group col-md-3 col-lg-12 col-12">
-									<label for="middle-name">{l s='Middle Name' mod='b2bregistration'}</label>
-									<input type="text" name="middle_name" id="middle-name" class="form-control" value="{if !empty($smarty.post.middle_name)}{$smarty.post.middle_name|escape:'htmlall':'UTF-8'}{/if}">
-							</div>
+								<div class="form-group col-md-3 col-lg-12 col-12">
+										<label for="middle-name">{l s='Middle Name' mod='b2bregistration'}</label>
+										<input type="text" name="middle_name" id="middle-name" class="form-control" value="{if !empty($smarty.post.middle_name)}{$smarty.post.middle_name|escape:'htmlall':'UTF-8'}{/if}">
+								</div>
 							{/if}
 							<div class="form-group col-md-3 col-lg-12 col-12">
 								<label for="last-name">{l s='Last Name' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
@@ -87,54 +89,52 @@
 								</div>	
 							{/if}
 
-						<div class="form-group col-md-3 col-lg-12 col-12 row">
-							{if $enable_birthdate}
-								<div class="form-group col-md-3 col-lg-4 col-12">
+							<div class="form-group col-md-3 col-lg-12 col-12 row">
+								{if $enable_birthdate}
+									<div class="form-group col-md-3 col-lg-4 col-12">
 										<label for="birthdate">{l s='Birth Date' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
 										<input type="text" name="birthday" id="birthdate" class="form-control" placeholder="{l s='YYYY-MM-DD' mod='b2bregistration'}" value="{if !empty($smarty.post.birthday)}{$smarty.post.birthday|escape:'htmlall':'UTF-8'}{/if}">
 										<span class="form-control-comment">{l s='(E.g.: 1970-12-31)' mod='b2bregistration'}</span>
 									</div>
-							{/if}
+								{/if}
 
-							{if $enable_website}
-								<div class="form-group col-md-3 col-lg-8 col-12">
+								{if $enable_website}
+									<div class="form-group col-md-3 col-lg-8 col-12">
 										<label for="gender">{l s='Website' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
 										<input type="text" name="website" id="company-website" class="form-control" value="{if !empty($smarty.post.website)}{$smarty.post.website|escape:'htmlall':'UTF-8'}{/if}" placeholder="{l s='https://www.google.com' mod='b2bregistration'}">
 									</div>	
-							{/if}
-						</div>
-						<br /><br /><br />
+								{/if}
+							</div>
+							<br /><br /><br />
 
 
 
-						{if $enable_address}
-						
-							<h3 class="registration_block_title">{if !empty($address_heading)}{$address_heading|escape:'htmlall':'UTF-8'}{/if}</h3>
+							{if $enable_address}
+								<h3 class="registration_block_title">{if !empty($address_heading)}{$address_heading|escape:'htmlall':'UTF-8'}{/if}</h3>
 
-							<div class="form-group col-md-4 col-lg-12 col-12 row">
-								<div class="form-group col-md-4">
+								<div class="form-group col-md-4 col-lg-12 col-12 row">
+									<div class="form-group col-md-4">
 										<label for="address-alias">{l s='Address Alias' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
 										<input type="text" name="address_alias" id="address-alias" placeholder="{l s='e.g Home' mod='b2bregistration'}" class="form-control" value="{if !empty($smarty.post.address_alias)}{$smarty.post.address_alias|escape:'htmlall':'UTF-8'}{/if}">
-								</div>
-								
-								<div class="form-group col-md-4">
+									</div>
+									
+									<div class="form-group col-md-4">
 										<label for="city">{l s='City' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
 										<input type="text" name="city" id="city" class="form-control" value="{if !empty($smarty.post.city)}{$smarty.post.city|escape:'htmlall':'UTF-8'}{/if}">
-								</div>
+									</div>
 
-								<div class="form-group col-md-4">
+									<div class="form-group col-md-4">
 										<label for="vat_num">{l s='Vat Number' mod='b2bregistration'}</label>
 										<input type="text" name="vat_number" id="vat_num" class="form-control" value="{if !empty($smarty.post.vat_num)}{$smarty.post.vat_number|escape:'htmlall':'UTF-8'}{/if}">
+									</div>
 								</div>
-							</div>
 
-							<div class="form-group col-md-3 col-lg-12 col-12">
+								<div class="form-group col-md-3 col-lg-12 col-12">
 									<label for="address">{l s='Address' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
 									<input type="text" name="address" id="address" class="form-control" value="{if !empty($smarty.post.address)}{$smarty.post.address|escape:'htmlall':'UTF-8'}{/if}">
-							</div>
-
-						{/if}
-						<br /><br /><br />
+								</div>
+							{/if}
+							<br /><br /><br />
 
 
 
@@ -148,24 +148,25 @@
 							</div>
 
 						{if $enable_identification_number}
-								<div class="form-group col-md-4">
-									<label for="identification-number">{l s='Identification/Siret Number' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
-									<input type="text" name="identification_number" id="identification-number" class="form-control" value="{if !empty($smarty.post.identification_number)}{$smarty.post.identification_number|escape:'htmlall':'UTF-8'}{/if}">
-								</div>
+							<div class="form-group col-md-4">
+								<label for="identification-number">{l s='Identification/Siret Number' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
+								<input type="text" name="identification_number" id="identification-number" class="form-control" value="{if !empty($smarty.post.identification_number)}{$smarty.post.identification_number|escape:'htmlall':'UTF-8'}{/if}">
+							</div>
 						{/if}
+
 						{if $enable_group_selection}
 							{if !empty($selected_groups)}
 								<div class="form-group col-md-4">
 								<label for="select-group">{l s='Select group' mod='b2bregistration'}</label>
-									<select class="form-control" id="select-group" name="customer_group">
-										{if !empty($all_groups)}
-											{foreach from=$all_groups item=groups}
-												{if in_array($groups['id_group'], $selected_groups)}
-													<option value="{$groups['id_group']}"{if $default_group AND $default_group == $groups['id_group']}selected{/if}>{$groups['name']|escape:'htmlall':'UTF-8'}</option>
-												{/if}
-											{/foreach}
-										{/if}
-									</select>
+								<select class="form-control" id="select-group" name="customer_group">
+									{if !empty($all_groups)}
+										{foreach from=$all_groups item=groups}
+											{if in_array($groups['id_group'], $selected_groups)}
+												<option value="{$groups['id_group']}"{if $default_group AND $default_group == $groups['id_group']}selected{/if}>{$groups['name']|escape:'htmlall':'UTF-8'}</option>
+											{/if}
+										{/foreach}
+									{/if}
+								</select>
 								</div>
 							{/if}
 						{/if}
@@ -186,7 +187,6 @@
 								
 								<div class="form-group col-md-6">
 									<label for="password">{l s='Password' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
-									
 									<div class="input-group js-parent-focus">
 										<input type="password" name="password" id="business-password" class="form-control js-child-focus js-visible-password" value="{if !empty($smarty.post.password)}{$smarty.post.password|escape:'htmlall':'UTF-8'}{/if}">
 										<div class="input-group-append">
@@ -195,12 +195,10 @@
 											</button>
 										</div>
 									</div>
-
 								</div>
 
 								<div class="form-group col-md-6">
 									<label for="confirm-password">{l s='Confirm Password' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
-									
 									<div class="input-group js-parent-focus">
 										<input type="password" name="confirm_password" id="confirm-password" class="form-control js-child-focus js-visible-password" value="{if !empty($smarty.post.confirm_password)}{$smarty.post.confirm_password|escape:'htmlall':'UTF-8'}{/if}">
 										<div class="input-group-append">
@@ -208,98 +206,78 @@
 												{l s='Show' mod='b2bregistration'}
 											</button>
 										</div>
-									</div>  
-									  
+									</div>
 								</div>
 								
 							</div>
-						<br /><br /><br />
+							<br /><br /><br />
 
 
 						
-						{if $custom_fields AND $enable_custom}
-											<div class="clearfix"></div>
-											
-													<h3 class="registration_block_title">{if !empty($custom_heading)}{$custom_heading|escape:'htmlall':'UTF-8'}{/if}</h3>
-											
-											<div class="clearfix"></div>
-											{$hook_create_account_form nofilter}
-									{/if}
-							
-						<div class="form-group col-md-4" >
+							{if $custom_fields AND $enable_custom}
+								<div class="clearfix"></div>
+								<h3 class="registration_block_title">{if !empty($custom_heading)}{$custom_heading|escape:'htmlall':'UTF-8'}{/if}</h3>
+								<div class="clearfix"></div>
+							{$hook_create_ac{/if}
+
+
+
+							<div class="form-group col-md-6 col-lg-6 col-6 row">
+								<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" >
 									<span class="custom-checkbox">
-										<label class="label-control col-md-12">
-											<input name="partner_option" type="checkbox" id="partner-option" value="0">
-											<!-- span><i class="material-icons rtl-no-flip checkbox-checked"></i></span -->
-											{l s='Receive offers from our partners' mod='b2bregistration'}
-										</label>
+										<input name="partner_option" type="checkbox" id="partner-option" value="0">
+										<label for="partner-option">{l s='Receive offers from our partners' mod='b2bregistration'}</label>
 									</span>
+								</div>
+
+								<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+									<span class="custom-checkbox">
+										<input name="newsletter" type="checkbox" id="newsletter" value="0">
+										<label for="newsletter">{l s='Sign up for our newsletter' mod='b2bregistration'}</label>
+									</span>
+								</div>
 							</div>
 
-							<div class="form-group col-md-4" >
+							<div class="form-group col-md-6 col-lg-6 col-6 row">
+								<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" >
 									<span class="custom-checkbox">
-										<label class="label-control col-md-12">
-											<input name="newsletter" value="0" type="checkbox" id="newsletter">
-											<!-- span><i class="material-icons rtl-no-flip checkbox-checked"></i></span -->
-											{l s='Sign up for our newsletter' mod='b2bregistration'}
-										</label>
+										
+										<input name="terms" type="checkbox" id="terms" value="1">
+										<label for="terms">{l s='I agree to the terms and conditions and the privacy policy' mod='b2bregistration'}
+											{if isset($cms) AND $cms}
+												<a class="read-b2b-conditions" href="#b2b-cond" class="thickbox" title="{l s='Conditions of the B2B registration program' mod='b2bregistration'}" rel="nofollow">{l s='Read conditions.' mod='b2bregistration'}</a>
+												<div style="display:none;">
+													<div id="b2b-cond">
+														{include file="module:b2bregistration/views/templates/front/cms-page.tpl"}
+													</div>
+												</div>
+											{/if}</label>
 									</span>
+								</div>
 							</div>
 
-							<div class="form-group col-md-4" >
-									<span class="custom-checkbox">
-										<label class="label-control col-md-12">
-												<input name="terms" type="checkbox" id="terms" value="1" >
-												<!-- span><i class="material-icons rtl-no-flip checkbox-checked"></i></span -->
-												{l s='I agree to the terms and conditions and the privacy policy' mod='b2bregistration'}
-								{if isset($cms) AND $cms}
-									<a class="read-b2b-conditions" href="#b2b-cond" class="thickbox" title="{l s='Conditions of the B2B registration program' mod='b2bregistration'}" rel="nofollow">{l s='Read conditions.' mod='b2bregistration'}</a>
-									<div style="display:none;">
-										<div id="b2b-cond">
-											{include file="module:b2bregistration/views/templates/front/cms-page.tpl"}
-										</div>
-									</div>
-								{/if}
-							</label>
-									</span>
-							</div>
 
-							<div class="form-group col-md-4" >
-									<span class="custom-checkbox">
-										<label class="label-control col-md-12">
-												<input name="rules" type="checkbox" checked="checked" id="rules" value="1" >
-												<!-- span><i class="material-icons rtl-no-flip checkbox-checked"></i></span -->
-								{if isset($cms_rule) AND $cms_rule}
-									<a class="read-b2b-conditions" href="#b2b-cond2" class="thickbox" title="{l s='Rules of the B2B registration program' mod='b2bregistration'}" rel="nofollow">{l s='Read Rules.' mod='b2bregistration'}</a>
-									<div style="display:none;">
-										<div id="b2b-cond2">
-											{include file="module:b2bregistration/views/templates/front/cms-page-rule.tpl"}
-										</div>
-									</div>
-								{/if}
-							</label>
-									</span>
-							</div>
 
-							<!-- consent box -->
+
+''''							<!-- consent box -->
 						<div class="form-group row">
-							
-						<div class="col-lg-9">
-							{hook h='displayGDPRConsent' mod='psgdpr' id_module=$id_module}
-						</div>
-						</div>
-							<div class="form-group col-md-6">
-											<div class='g-recaptcha' id='Gcaptcha'></div>
+							<div class="col-lg-9">
+								{hook h='displayGDPRConsent' mod='psgdpr' id_module=$id_module}
 							</div>
-							<div class="col-md-12"><br /><br /></div>
-							<footer class="form-footer clearfix">
-								<button title="{l s='Check terms to enable button' mod='b2bregistration' }" class="btn btn-primary form-control-submit float-xs-right" type="submit" id="b2b_add_data" name="b2b_add_data" {if isset($site_key) AND $enable_captcha}style='display:none;'{/if}>
-										{l s='Save' mod='b2bregistration'}
-									</button>
-							</footer>
+						</div>
+						<div class="form-group col-md-6">
+							<div class='g-recaptcha' id='Gcaptcha'></div>
+						</div>
+						<div class="col-md-12"><br /><br /></div>
+						<footer class="form-footer clearfix">
+							<button title="{l s='Check terms to enable button' mod='b2bregistration' }" class="btn btn-primary form-control-submit float-xs-right" type="submit" id="b2b_add_data" name="b2b_add_data" {if isset($site_key) AND $enable_captcha}style='display:none;'{/if}>
+								{l s='Save' mod='b2bregistration'}
+							</button>
+						</footer>
 					</div>
 				</div>
-			</section>		
+			</section>
+
 		</form>
 	</section>
 {/block}
