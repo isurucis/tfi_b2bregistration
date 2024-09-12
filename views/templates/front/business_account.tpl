@@ -188,14 +188,7 @@
 								<div class="form-group col-md-6">
 									<label for="password">{l s='Password' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
 									<div class="input-group js-parent-focus">
-										<input type="password" name="password" id="business-password" class="form-control js-child-focus js-visible-password" value="{if !empty($smarty.post.password)}{$smarty.post.password|escape:'htmlall':'UTF-8'}{/if}"
-
-										    {if isset($configuration.password_policy.minimum_length)}data-minlength="{$configuration.password_policy.minimum_length}"{/if}
-									            {if isset($configuration.password_policy.maximum_length)}data-maxlength="{$configuration.password_policy.maximum_length}"{/if}
-									            {if isset($configuration.password_policy.minimum_score)}data-minscore="{$configuration.password_policy.minimum_score}"{/if}
-									            pattern=".{literal}{{/literal}{$configuration.password_policy.minimum_length},{literal}}{/literal}"
-										    required
-										>
+										<input type="password" name="password" id="business-password" class="form-control js-child-focus js-visible-password" value="{if !empty($smarty.post.password)}{$smarty.post.password|escape:'htmlall':'UTF-8'}{/if}">
 										<div class="input-group-append">
 											<button class="btn btn-primary" type="button" data-action="show-password" data-text-show="Show" data-text-hide="Hide">
 												{l s='Show' mod='b2bregistration'}
@@ -207,13 +200,7 @@
 								<div class="form-group col-md-6">
 									<label for="confirm-password">{l s='Confirm Password' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
 									<div class="input-group js-parent-focus">
-										<input type="password" name="confirm_password" id="confirm-password" class="form-control js-child-focus js-visible-password" value="{if !empty($smarty.post.confirm_password)}{$smarty.post.confirm_password|escape:'htmlall':'UTF-8'}{/if}"
-										    {if isset($configuration.password_policy.minimum_length)}data-minlength="{$configuration.password_policy.minimum_length}"{/if}
-									            {if isset($configuration.password_policy.maximum_length)}data-maxlength="{$configuration.password_policy.maximum_length}"{/if}
-									            {if isset($configuration.password_policy.minimum_score)}data-minscore="{$configuration.password_policy.minimum_score}"{/if}
-									            pattern=".{literal}{{/literal}{$configuration.password_policy.minimum_length},{literal}}{/literal}"
-										    required
-										>
+										<input type="password" name="confirm_password" id="confirm-password" class="form-control js-child-focus js-visible-password" value="{if !empty($smarty.post.confirm_password)}{$smarty.post.confirm_password|escape:'htmlall':'UTF-8'}{/if}">
 										<div class="input-group-append">
 											<button class="btn btn-primary" type="button" data-action="show-password" data-text-show="Show" data-text-hide="Hide">
 												{l s='Show' mod='b2bregistration'}
