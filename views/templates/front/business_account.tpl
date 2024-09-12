@@ -237,14 +237,14 @@
 
 							<div class="form-group col-md-6 col-lg-6 col-6 row">
 								<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" >
-									<span class="custom-checkbox">
+									<span class="custom-checkbox form-group-checkbox">
 										<input name="partner_option" type="checkbox" id="partner-option" value="0">
 										<label for="partner-option">{l s='Receive offers from our partners' mod='b2bregistration'}</label>
 									</span>
 								</div>
 
 								<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" >
-									<span class="custom-checkbox">
+									<span class="custom-checkbox form-group-checkbox">
 										<input name="newsletter" type="checkbox" id="newsletter" value="0">
 										<label for="newsletter">{l s='Sign up for our newsletter' mod='b2bregistration'}</label>
 									</span>
@@ -253,7 +253,7 @@
 
 							<div class="form-group col-md-6 col-lg-6 col-6 row">
 								<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" >
-									<span class="custom-checkbox">
+									<span class="custom-checkbox form-group-checkbox">
 										
 										<input name="terms" type="checkbox" id="terms" value="1">
 										<label for="terms">{l s='I agree to the terms and conditions and the privacy policy' mod='b2bregistration'}

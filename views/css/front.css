@@ -173,7 +173,7 @@
 
 
 
-.form-group label:before {
+.form-group-checkbox label:before {
   content:'';
   -webkit-appearance: none;
   background-color: transparent;
@@ -187,7 +187,7 @@
   margin-right: 5px;
 }
 
-.form-group input:checked + label:after {
+.form-group-checkbox input:checked + label:after {
   content: '';
   display: block;
   position: absolute;
