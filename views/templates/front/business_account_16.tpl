@@ -171,23 +171,13 @@
 					<div class="form-group row"></div>
 				{/if}
 				<div class="form-group col-md-4" >
-					<div class="form-group-checkbox">
-							<input 
-							type="checkbox" 
-							id="partner_option" 
-							name="partner_option" 
-							class="fmm_check" 
-							value="0">
-							<label for="partner_option" class="selection-button-checkbox">{l s='Receive offers from our partners' mod='b2bregistration'}</label>
-					</div> 
-
-		          <!-- span class="custom-checkbox">
+		          <span class="custom-checkbox">
 		            <label class="label-control col-md-12">
 		              <input name="partner_option" type="checkbox" id="partner-option" value="0">
 		              <span><i class="material-icons rtl-no-flip checkbox-checked"></i></span>
-		              {* l s='Receive offers from our partners' mod='b2bregistration'*}
+		              {l s='Receive offers from our partners' mod='b2bregistration'}
 		            </label>
-		          </span -->
+		          </span>
     			</div>
 
     			<div class="form-group col-md-4" >
