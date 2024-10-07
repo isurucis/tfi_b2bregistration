@@ -226,7 +226,7 @@
 								<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" >
 									<span class="custom-checkbox form-group-checkbox">
 										<input name="partner_option" type="checkbox" id="partner-option" value="0">
-										<label for="partner-option">{l s='Receive offers from our partners' mod='b2bregistration'}</label>
+										<label for="partner-option">{l s='Receive offers from our partners 1212' mod='b2bregistration'}</label>
 									</span>
 								</div>
 

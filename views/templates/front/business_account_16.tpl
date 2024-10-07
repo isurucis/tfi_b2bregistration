@@ -175,7 +175,7 @@
 		            <label class="label-control col-md-12">
 		              <input name="partner_option" type="checkbox" id="partner-option" value="0">
 		              <span><i class="material-icons rtl-no-flip checkbox-checked"></i></span>
-		              {l s='Receive offers from our partners' mod='b2bregistration'}
+		              {l s='Receive offers from our partners 1111' mod='b2bregistration'}
 		            </label>
 		          </span>
     			</div>
