@@ -242,19 +242,33 @@
 								</div>
 
 								<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" >
-									<span class="custom-checkbox form-group-checkbox">
+									<div class="form-group-checkbox">
+											<input 
+											type="checkbox" 
+											id="newsletter" 
+											name="newsletter" 
+											class="fmm_check" 
+											value="0">
+											<label for="newsletter" class="selection-button-checkbox">{l s='Sign up for our newsletter' mod='b2bregistration'}</label>
+									</div>
+									
+									<!-- span class="custom-checkbox form-group-checkbox">
 										<input name="newsletter" type="checkbox" id="newsletter" value="0">
-										<label for="newsletter">{l s='Sign up for our newsletter' mod='b2bregistration'}</label>
-									</span>
+										<label for="newsletter">{* l s='Sign up for our newsletter' mod='b2bregistration' *}</label>
+									</span -->
 								</div>
 							</div>
 
 							<div class="form-group col-md-6 col-lg-6 col-6 row">
 								<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" >
-									<span class="custom-checkbox form-group-checkbox">
-										
-										<input name="terms" type="checkbox" id="terms" value="1">
-										<label for="terms">{l s='I agree to the terms and conditions and the privacy policy' mod='b2bregistration'}
+									<div class="form-group-checkbox">
+											<input 
+											type="checkbox" 
+											id="terms" 
+											name="terms" 
+											class="fmm_check" 
+											value="0">
+											<label for="terms" class="selection-button-checkbox">{l s='I agree to the terms and conditions and the privacy policy' mod='b2bregistration'}
 											{if isset($cms) AND $cms}
 												<a class="read-b2b-conditions" href="#b2b-cond" class="thickbox" title="{l s='Conditions of the B2B registration program' mod='b2bregistration'}" rel="nofollow">{l s='Read conditions.' mod='b2bregistration'}</a>
 												<div style="display:none;">
@@ -262,16 +276,30 @@
 														{include file="module:b2bregistration/views/templates/front/cms-page.tpl"}
 													</div>
 												</div>
-											{/if}</label>
-									</span>
+											{/if}
+											</label>
+									</div>
+									
+									<!-- span class="custom-checkbox form-group-checkbox">
+										<input name="terms" type="checkbox" id="terms" value="1">
+										<label for="terms">{* l s='I agree to the terms and conditions and the privacy policy' mod='b2bregistration' *}
+											{* if isset($cms) AND $cms *}
+												<a class="read-b2b-conditions" href="#b2b-cond" class="thickbox" title="{l s='Conditions of the B2B registration program' mod='b2bregistration'}" rel="nofollow">{* l s='Read conditions.' mod='b2bregistration' *}</a>
+												<div style="display:none;">
+													<div id="b2b-cond">
+														{* include file="module:b2bregistration/views/templates/front/cms-page.tpl" *}
+													</div>
+												</div>
+											{* /if *}</label>
+									</span -->
+
 								</div>
 							</div>
 
 
 
-
-''''							<!-- consent box -->
-						<div class="form-group row">
+						<!-- consent box -->
+						<!-- div class="form-group row">
 							<div class="col-lg-9">
 								{hook h='displayGDPRConsent' mod='psgdpr' id_module=$id_module}
 							</div>
@@ -279,10 +307,12 @@
 						<div class="form-group col-md-6">
 							<div class='g-recaptcha' id='Gcaptcha'></div>
 						</div>
-						<div class="col-md-12"><br /><br /></div>
+						<div class="col-md-12"><br /><br /></div -->
+
+						
 						<footer class="form-footer clearfix">
 							<button title="{l s='Check terms to enable button' mod='b2bregistration' }" class="btn btn-primary form-control-submit float-xs-right" type="submit" id="b2b_add_data" name="b2b_add_data" {if isset($site_key) AND $enable_captcha}style='display:none;'{/if}>
-								{l s='Save' mod='b2bregistration'}
+								{l s='Register Now' mod='b2bregistration'}
 							</button>
 						</footer>
 					</div>
