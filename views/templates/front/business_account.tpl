@@ -259,7 +259,7 @@
 								</div>
 							</div>
 
-							<div class="form-group col-md-6 col-lg-6 col-6 row">
+							<div class="form-group col-md-12 col-lg-12 col-12 row">
 								<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" >
 									<div class="form-group-checkbox">
 											<input 
@@ -309,7 +309,7 @@
 						</div>
 						<div class="col-md-12"><br /><br /></div -->
 
-						
+
 						<footer class="form-footer clearfix">
 							<button title="{l s='Check terms to enable button' mod='b2bregistration' }" class="btn btn-primary form-control-submit float-xs-right" type="submit" id="b2b_add_data" name="b2b_add_data" {if isset($site_key) AND $enable_captcha}style='display:none;'{/if}>
 								{l s='Register Now' mod='b2bregistration'}

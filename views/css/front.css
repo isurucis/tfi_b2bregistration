@@ -71,7 +71,8 @@
     border: solid 1px #ced4da;
     border-radius: 10px;
     margin-top: 3px;
-    padding-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
   
 .registration_block_title {
@@ -217,4 +218,13 @@
   border: solid #67c28d;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
+}
+
+a.read-b2b-conditions {
+    color: #67c28d;
+    text-decoration: none;
+}
+a.read-b2b-conditions:hover {
+    color: #2dcc70;
+    text-decoration: underline;
 }
