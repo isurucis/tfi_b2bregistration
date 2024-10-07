@@ -222,7 +222,7 @@
 
 
 
-							<div class="form-group col-md-6 col-lg-6 col-6 row">
+							<div class=" col-lg-6 col-6 row">
 								<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" >
 									<div class="form-group-checkbox">
 											<input 
@@ -241,7 +241,7 @@
 
 								</div>
 
-								<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+								<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" >
 									<div class="form-group-checkbox">
 											<input 
 											type="checkbox" 
@@ -259,8 +259,8 @@
 								</div>
 							</div>
 
-							<div class="form-group col-md-12 col-lg-12 col-12 row">
-								<div class="form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+							<div class=" col-md-12 col-lg-12 col-12 row">
+								<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" >
 									<div class="form-group-checkbox">
 											<input 
 											type="checkbox" 
