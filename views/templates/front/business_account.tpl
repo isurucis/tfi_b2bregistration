@@ -64,7 +64,19 @@
 							{/if}
 							<div class="form-group col-md-3 col-lg-12 col-12">
 								<label for="first-name">{l s='First Name' mod='b2bregistration'}<sup style="color:red;" class="required">*</sup></label>
-								<input type="text" name="first_name" id="first-name" class="form-control" value="{if !empty($smarty.post.first_name)}{$smarty.post.first_name|escape:'htmlall':'UTF-8'}{/if}">
+								<input type="text" 
+								name="first_name" id="first-name" 
+								class="form-control" 
+								value="{if !empty($smarty.post.first_name)}{$smarty.post.first_name|escape:'htmlall':'UTF-8'}{/if}"
+								required minlength="2"
+								>
+								<span class="error-icon hidden -ml-6 text-red-700">
+									<i class="fa-solid fa-circle-exclamation"></i>
+								</span>
+								<span class="success-icon hidden -ml-6 text-green-700">
+									<i class="fa-solid fa-circle-check"></i>
+								</span>
+								<div class="error textt-red-700 py-2"></div>
 							</div>
 							{if $middle_name}
 								<div class="form-group col-md-3 col-lg-12 col-12">
