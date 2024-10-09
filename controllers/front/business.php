@@ -738,15 +738,15 @@ class B2BRegistrationBusinessModuleFrontController extends ModuleFrontController
                     ['position' => 'top', 'priority' => 500]
                 );
                 $this->registerJavascript(
-                    'validate_registration_fields_new',
-                    'modules/' . $this->module->name . '/views/js/validate_registration_fields_new.js',
+                    'validate_registration_fields',
+                    'modules/' . $this->module->name . '/views/js/validate_registration_fields.js',
                     ['position' => 'bottom', 'priority' => 501]
                 );
             } else {
                 $this->addCSS([_PS_JS_DIR_ .'jquery/plugins/timepicker/jquery-ui-timepicker-addon.css']);
                 $this->addJS([
                     _PS_JS_DIR_ .'jquery/plugins/timepicker/jquery-ui-timepicker-addon.js',
-                    $this->module->getPathUri() .'views/js/validate_registration_fields_new.js'
+                    $this->module->getPathUri() .'views/js/validate_registration_fields.js'
                 ]);
             }
         }
