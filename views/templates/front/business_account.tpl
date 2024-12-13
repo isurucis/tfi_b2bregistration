@@ -46,7 +46,9 @@
 					</div>
 					
 					<div id="registration_content" class="registration_content pl-lg-15 col-lg-8 col-12">
-						
+						<div>
+							<h1>Create a New User Account</h1>
+						</div>
 						<h3 class="registration_block_title">{if !empty($personal_heading)}{$personal_heading|escape:'htmlall':'UTF-8'}{/if}</h3>
 							{if $enable_prefix}
 								<div class="form-group col-md-2">
