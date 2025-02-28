@@ -32,9 +32,12 @@
 		<form id="customer-form" method="post" action="{$url_link|escape:'htmlall':'UTF-8'}">
 			<input type="hidden" name="id_profile" value="{$id_profile|intval}">
 			<div id="b2b_registation_required" class="alert alert-danger error" style="display:none;"></div>
-			
-			<h1 id="js-product-list-header" class="h2 product-list-header-title">Create a New User Account</h1>
 
+			{if $logged}
+				<h1 id="js-product-list-header" class="h2 product-list-header-title">Your Account</h1>
+			{else}
+				<h1 id="js-product-list-header" class="h2 product-list-header-title">Create a New User Account</h1>
+			{/if}
 			<section>
 				<div class="row">
 					<div id="registration_slideshow" class="registration_slideshow col-lg-4 col-12">
@@ -136,7 +139,7 @@
 										<input type="text" name="city" id="city" class="form-control" value="{if !empty($smarty.post.city)}{$smarty.post.city|escape:'htmlall':'UTF-8'}{/if}">
 									</div>
 
-									<div class="form-group col-md-4">
+									<div class="form-group col-md-4" style="display: none;">
 										<label for="vat_num">{l s='Vat Number' mod='b2bregistration'}</label>
 										<input type="text" name="vat_number" id="vat_num" class="form-control" value="{if !empty($smarty.post.vat_num)}{$smarty.post.vat_number|escape:'htmlall':'UTF-8'}{/if}">
 									</div>
